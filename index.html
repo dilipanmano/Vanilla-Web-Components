@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vanilla Web Components</title>
+        <style>
+            h3 {
+                color: purple;
+            }
+        </style>
+    </head>
+    <body>
+        <!--<h3>Hello World</h3>-->
+        <user-card
+            name="Jack R"
+            avatar="https://randomuser.me/api/portraits/men/91.jpg"
+        >
+            <div slot="Email">jackr@aol.com</div>
+            <div slot="Phone">555-888-222</div>
+        </user-card>
+        <user-card
+            name="Mark Donald"
+            avatar="https://randomuser.me/api/portraits/men/12.jpg"
+        >
+            <div slot="Email">markd@aol.com</div>
+            <div slot="Phone">554-847-212</div>
+        </user-card>
+        <script src="app.js"></script>
+    </body>
+</html>
